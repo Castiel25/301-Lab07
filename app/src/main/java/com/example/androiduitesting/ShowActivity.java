@@ -21,7 +21,9 @@ public class ShowActivity extends AppCompatActivity {
         /*Intent intent = getIntent();*/
         String cityName = getIntent().getStringExtra(EXTRA_CITY_NAME);
 
-        if (cityName == null) {cityName = "";}
+        if (cityName == null) {
+            cityName = "";
+        }
         cityText.setText(cityName);
 
         backButton.setOnClickListener(v -> {
