@@ -18,13 +18,14 @@ public class ShowActivity extends AppCompatActivity {
 
         Button backButton = findViewById(R.id.button_back);
 
-        /*Intent intent = getIntent();*/
         String cityName = getIntent().getStringExtra(EXTRA_CITY_NAME);
 
         if (cityName == null) {
             cityName = "";
         }
         cityText.setText(cityName);
+
+// The following is adapted from prompt "how to do simple button back to main activity" on Chatgpt, OPENAI
 
         backButton.setOnClickListener(v -> {
             finish();

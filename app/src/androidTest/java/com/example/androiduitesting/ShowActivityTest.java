@@ -31,6 +31,7 @@ public class ShowActivityTest {
     @Rule
     public ActivityScenarioRule<MainActivity> scenario = new ActivityScenarioRule<MainActivity>(MainActivity.class);
 
+    // following is adapted from prompt "how to do a UI test with intent?" on Chatgpt, OPENAI
     @Before
     public void setUp() {
         Intents.init();
